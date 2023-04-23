@@ -6,6 +6,11 @@ Some resources
 
 Stuff I know
 ```
+## select visually and replace
+select visually: v or shift+v or ctrl+shift+v
+insert: shift+i
+finish: esc
+
 ## indentation
 
 ctrl + t // indent forward 
