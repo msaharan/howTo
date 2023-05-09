@@ -16,3 +16,20 @@ do
 done
 ```
 
+
+# Some scripts
+### select files based on length and delete if shorter than a chosen length
+```
+#!/bin/bash
+
+for fileName in $(ls ./75deg/*/SIM*.list)
+do
+  echo $fileName
+  if [ $(wc -l < $fileName) < 3 ]
+  then
+    echo $fileName
+    echo $(wc -l < $fileName)
+    $fileName >> deleteThese.txt
+  fi
+done
+```
