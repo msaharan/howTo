@@ -16,8 +16,6 @@ do
 done
 ```
 
-
-# Some scripts
 ### select files based on length and delete if shorter than a chosen length
 ```
 #!/bin/bash
