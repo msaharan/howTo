@@ -31,3 +31,8 @@ do
   fi
 done
 ```
+
+### Output directory tree
+```
+tree
+```
