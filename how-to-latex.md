@@ -1,7 +1,7 @@
 # how-to: LaTeX
 
 Include a wide figure on top, two narrow figures on bottom.
-
+```
 \begin{figure}[htbp]
 		\centering
 	\begin{tabularx}{\textwidth}{XX}
