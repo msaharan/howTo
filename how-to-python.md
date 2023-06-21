@@ -54,7 +54,16 @@ rdSdMarker = mlines.Line2D([], [], color='black', marker='.', alpha = 0.7, lines
                       markersize=4, label='WCDT3')
 
 plt.legend(handles=[rdMarker, rdSdMarker])
+
+___
+
+horizontal legend:
+
+plt.legend(ncol = 5, loc = 'upper left', handletextpad=0.1, columnspacing = 0.1, borderpad = 0.1,
+              borderaxespad = 0.1, handler_map = {tuple: mpl.legend_handler.HandlerTuple(None)},
+              title = r'$\mu$, $\dfrac{\sigma}{\sqrt{N}}$', framealpha = 0.7)
 ```
+
 Many markers and colors
 ```
 cmap = plt.get_cmap('tab20')
