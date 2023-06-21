@@ -55,6 +55,14 @@ rdSdMarker = mlines.Line2D([], [], color='black', marker='.', alpha = 0.7, lines
 
 plt.legend(handles=[rdMarker, rdSdMarker])
 ```
+Many markers and colors
+```
+cmap = plt.get_cmap('tab20')
+colors = cmap(np.arange(0,len(zenithXArray),1))
+markers = ['o', 's', 'D', '^', 'v', 'P', '>', '<', '+', 'x', 'X', '*', 'h', 'p', 'H', '8', '4', '_', '|']
+for number in ...
+    plt.errorbar(..., color = colors[number], marker = markers[number] ...
+```
 
 ### Pandas
 
@@ -77,3 +85,4 @@ Show inline figures in better resolution
 ```
 %config InlineBackend.figure_format = 'retina'
 ```
+
