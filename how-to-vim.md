@@ -105,6 +105,8 @@ nnoremap th  :tabfirst<CR>
 nnoremap tk  :tabnext<CR>
 nnoremap tj  :tabprev<CR>
 nnoremap tl  :tablast<CR>
-```
+
 " colorscheme
 colorscheme mojave
+```
+
