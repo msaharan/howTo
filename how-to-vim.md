@@ -3,6 +3,7 @@
 Some resources
 -   [Everyday Vim – A Basic Vim Commands Cheat Sheet](https://spin.atomicobject.com/2016/04/19/vim-commands-cheat-sheet/)
 -   [Tab navigation](https://vim.fandom.com/wiki/Alternative_tab_navigation)
+-   [vim-colorschemes](https://github.com/flazz/vim-colorschemes)
 
 Stuff I know
 ```
