@@ -66,3 +66,15 @@ do
 
 done
 ```
+### Disk usage
+check out: https://opensource.com/article/18/7/how-check-free-disk-space-linux
+```
+# Nice interface and shows the space occupied by the contents individually. 
+fcdu . 
+
+# show the total space used by the directory
+du -sh .
+
+# occupied and available space in a disk
+df -h
+```
