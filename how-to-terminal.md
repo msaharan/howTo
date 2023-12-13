@@ -78,7 +78,7 @@ du -sh .
 # occupied and available space in a disk
 df -h
 ```
-### Sort a file
+### Manage a large number of files 
 ```
 # sort a file according to column number N
 # -n to sort numerically. Remove to sort alphabetically.
@@ -86,4 +86,9 @@ sort -k N -n filename > sorted_filename
 
 # sort and replace the original file
 sort -k N -n -o filename filename
+
+# length of file
+for i in $(ls jobOut*); do echo $i $(cat $i | wc -l) >> fileLength.txt; done
 ```
+
+
