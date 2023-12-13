@@ -78,3 +78,12 @@ du -sh .
 # occupied and available space in a disk
 df -h
 ```
+### Sort a file
+```
+# sort a file according to column number N
+# -n to sort numerically. Remove to sort alphabetically.
+sort -k N -n filename > sorted_filename
+
+# sort and replace the original file
+sort -k N -n -o filename filename
+```
