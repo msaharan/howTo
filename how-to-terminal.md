@@ -89,6 +89,14 @@ sort -k N -n -o filename filename
 
 # length of file
 for i in $(ls jobOut*); do echo $i $(cat $i | wc -l) >> fileLength.txt; done
-```
 
+# move select files based on a sequence
+for ((i=100; i<=3500; i+=100))
+do
+  if [ -e Xint_$i ]
+  then
+    mv Xint_$i hide
+  fi
+done
+```
 
