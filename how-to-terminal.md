@@ -98,5 +98,11 @@ do
     mv Xint_$i hide
   fi
 done
+
+# move select files based on a sequence
+for ((i=6000; i<=9000; i+=100)); do
+    padded_i=$(printf "%04d" $i)
+    cp jobOut_10.0EeV_86deg_Xint_${padded_i}_* /vol/augerprime/users/msaharan/auger-gitlab/sandboxes/msaharan/pubCodeAndFig/triggerAnalysis/selectedShowers/wcd_dip/sd_plane_fit/10EeV/86deg
+done
 ```
 
