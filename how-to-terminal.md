@@ -1,5 +1,10 @@
 # How to do stuff in terminal
 
+### Check a script for errors without running
+```bash
+bash -n script.sh
+```
+
 ### List, select, and copy
 
 ```bash
