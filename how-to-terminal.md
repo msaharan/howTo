@@ -1,13 +1,10 @@
 # How to do stuff in terminal
 
-### Check a script for errors without running
 ```bash
+## Check a script for errors without running
 bash -n script.sh
-```
 
-### List, select, and copy
-
-```bash
+## List, select, and copy
 #!/bin/bash
 for slurmOutFileName in $(ls ./*.out)
 do
@@ -19,12 +16,9 @@ do
       rsync -av $slurmOutFileName outFiles/
     fi
 done
-```
 
-### select files based on length and delete if shorter than a chosen length
-```
+## select files based on length and delete if shorter than a chosen length
 #!/bin/bash
-
 for fileName in $(ls ./75deg/*/SIM*.list)
 do
   echo $fileName
@@ -35,17 +29,12 @@ do
     $fileName >> deleteThese.txt
   fi
 done
-```
 
-### Output directory tree
-```
+## Output directory tree
 tree -L 2
-```
 
-### find and replace
-```
+## find and replace
 #!/bin/bash
-
 for fileName in $(ls */*/*/*deg/*/SIM*.sh)
 do
   reasFileName=( ${fileName//.sh/.reas} )
@@ -68,23 +57,18 @@ do
 
   # delete the line containing the strind EPOPAR
   sed -i '/EPOPAR/d' $inpFileName
-
 done
-```
-### Disk usage
-check out: https://opensource.com/article/18/7/how-check-free-disk-space-linux
-```
+
+## Disk usage
+#check out: https://opensource.com/article/18/7/how-check-free-disk-space-linux
 # Nice interface and shows the space occupied by the contents individually. 
 fcdu . 
-
 # show the total space used by the directory
 du -sh .
-
 # occupied and available space in a disk
 df -h
-```
-### Manage a large number of files 
-```
+
+## Manage a large number of files
 # sort a file according to column number N
 # -n to sort numerically. Remove to sort alphabetically.
 sort -k N -n filename > sorted_filename
@@ -107,7 +91,7 @@ done
 # select files in a sequence
 for ((i=6000; i<=9000; i+=100)); do
     padded_i=$(printf "%04d" $i)
-    cp jobOut_10.0EeV_86deg_Xint_${padded_i}_* /vol/augerprime/users/msaharan/auger-gitlab/sandboxes/msaharan/pubCodeAndFig/triggerAnalysis/selectedShowers/wcd_dip/sd_plane_fit/10EeV/86deg
+    cp jobOut_10.0EeV_86deg_Xint_${padded_i}_* /path/to/location
 done
-```
 
+```
