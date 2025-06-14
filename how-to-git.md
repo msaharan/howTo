@@ -22,14 +22,24 @@ Because all branches were created from an older version of the main, they need t
 
 Solution:
 - Go to your feature branch: 
+```
 git checkout my-branch
+```
 - Fetch the latest changes:
-git fetch origin
+```
+  git fetch origin
+```
 - Merge or rebase main into your branch:
  - option 1: merge with a commit
+ ```
  git merge origin/main
+```
  - option 2: rebase to keep the history clean
+```
  git rebase origin/main
+```
 - Resolve conflicts if needed and push
+```
 git push origin my-branch
+```
 
